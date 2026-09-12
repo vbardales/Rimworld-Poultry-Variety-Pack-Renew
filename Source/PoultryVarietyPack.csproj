@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Poultry Variety Pack Renew - one DefModExtension and one Harmony postfix, which together
+       replace AnimalVariations.dll: the library the original went through for its Marans colours,
+       third-party, without sources, and dead since the 1.5 render tree. -->
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>PoultryVarietyPack</AssemblyName>
+    <RootNamespace>PoultryVarietyPack</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <!-- The DLL lands in Mod/Assemblies/: Mod/ is the only folder that goes to the Workshop. -->
+    <OutputPath>..\Mod\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyVersion>1.6.0.0</AssemblyVersion>
+    <FileVersion>1.6.0.0</FileVersion>
+    <Company>SirTalis</Company>
+    <Product>Poultry Variety Pack Renew</Product>
+    <!-- Nothing but this DLL may end up in Assemblies/: RimWorld loads every DLL in that folder. -->
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Reference assemblies from NuGet: no RimWorld installation is needed to compile. -->
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.*" PrivateAssets="all" />
+    <PackageReference Include="Lib.Harmony" Version="2.3.*" PrivateAssets="all" ExcludeAssets="runtime" />
+  </ItemGroup>
+
+</Project>

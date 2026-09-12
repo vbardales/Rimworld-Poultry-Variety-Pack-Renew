@@ -1,0 +1,13 @@
+<Project>
+
+  <PropertyGroup>
+    <!--
+      Build intermediates stay out of the mod folder: without this, Source/obj would ship with the
+      mod. It has to live in a Directory.Build.props - NuGet restore reads this property before the
+      csproj is loaded.
+    -->
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)..\..\.build\obj\PoultryVarietyPack\</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)..\..\.build\bin\PoultryVarietyPack\</BaseOutputPath>
+  </PropertyGroup>
+
+</Project>

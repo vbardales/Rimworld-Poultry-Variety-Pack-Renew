@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ======================= Duck =============================== -->
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>RunnerDuck</defName>
+    <label>Runner duck</label>
+    <description>An unusual duck that stands upright. It is a good layer, but a terrible sitter.</description>
+    <statBases>
+      <Wildness>0</Wildness>
+      <MoveSpeed>5.5</MoveSpeed>
+      <MarketValue>40</MarketValue>
+      <LeatherAmount>0</LeatherAmount>
+      <ComfyTemperatureMin>-6</ComfyTemperatureMin>
+      <FilthRate>4</FilthRate>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_EggLayer">
+        <eggUnfertilizedDef>EggRunnerDuckUnfertilized</eggUnfertilizedDef>
+        <eggFertilizedDef>EggRunnerDuckFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>0</eggFertilizationCountMax>
+        <eggLayIntervalDays>0.2</eggLayIntervalDays>
+        <eggCountRange>
+          <min>1</min>
+          <max>1</max>
+        </eggCountRange>
+      </li>
+    </comps>
+    <race>
+      <body>Bird</body>
+      <baseHungerRate>0.175</baseHungerRate>
+      <baseBodySize>0.3</baseBodySize>
+      <baseHealthScale>0.35</baseHealthScale>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <trainability>None</trainability>
+      <roamMtbDays>5</roamMtbDays>
+      <mateMtbHours>48</mateMtbHours>
+      <lifeExpectancy>12</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBabyTiny</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Chick_Call</soundWounded>
+          <soundDeath>Pawn_Chick_Call</soundDeath>
+          <soundCall>Pawn_Chick_Call</soundCall>
+          <soundAngry>Pawn_Chick_Call</soundAngry>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2</minAge>
+          <soundWounded>Pawn_Duck_Wounded</soundWounded>
+          <soundDeath>Pawn_Duck_Death</soundDeath>
+          <soundCall>Pawn_Duck_Call</soundCall>
+          <soundAngry>Pawn_Duck_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalFarm</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <label>claws</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>beak</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>RunnerDuck</defName>
+    <label>Runner duck</label>
+    <race>RunnerDuck</race>
+    <combatPower>30</combatPower>
+    <ecoSystemWeight>0.10</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <label>duckling</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/RunnerDuck/RunnerDuckling</texPath>
+          <drawSize>0.45</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+          <drawSize>0.45</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/RunnerDuck/RunnerDuck</texPath>
+          <drawSize>0.87</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+          <drawSize>0.87</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/RunnerDuck/RunnerDuck</texPath>
+          <drawSize>0.85</drawSize>
+        </femaleGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+          <drawSize>0.85</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+
+</Defs>

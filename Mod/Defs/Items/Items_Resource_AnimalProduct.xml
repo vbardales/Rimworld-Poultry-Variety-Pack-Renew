@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Runner Duck -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>EggRunnerDuckUnfertilized</defName>
+    <label>duck egg (unfert.)</label>
+    <description>An unfertilized duck egg.</description>
+    <graphicData>
+      <color>(135,155,125)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggRunnerDuckFertilized</defName>
+    <label>duck egg (fert.)</label>
+    <description>A fertilized duck egg. If all goes well, it should hatch into a duckling.</description>
+    <graphicData>
+      <color>(135,155,125)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>RunnerDuck</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>EggRouenDuckUnfertilized</defName>
+    <label>duck egg (unfert.)</label>
+    <description>An unfertilized duck egg.</description>
+    <graphicData>
+      <color>(225,230,230)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggRouenDuckFertilized</defName>
+    <label>duck egg (fert.)</label>
+    <description>A fertilized duck egg. If all goes well, it should hatch into a duckling.</description>
+    <graphicData>
+      <color>(225,230,230)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>RouenDuck</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>EggMuscovyDuckUnfertilized</defName>
+    <label>duck egg (unfert.)</label>
+    <description>An unfertilized duck egg.</description>
+    <graphicData>
+      <color>(215,205,200)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggMuscovyDuckFertilized</defName>
+    <label>duck egg (fert.)</label>
+    <description>A fertilized duck egg. If all goes well, it should hatch into a duckling.</description>
+    <graphicData>
+      <color>(215,205,200)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>MuscovyDuck</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>EggMaransUnfertilized</defName>
+    <label>chicken egg (unfert.)</label>
+    <description>An unfertilized chicken egg.</description>
+    <graphicData>
+      <color>(115,30,30)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggMaransFertilized</defName>
+    <label>chicken egg (fert.)</label>
+    <description>A fertilized chicken egg. If all goes well, it should hatch into a chick.</description>
+    <graphicData>
+      <color>(115,30,30)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>2.3</hatcherDaystoHatch>
+        <hatcherPawn>MaranChicken</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>EggCinnamonQueenUnfertilized</defName>
+    <label>chicken egg (unfert.)</label>
+    <description>An unfertilized chicken egg.</description>
+    <graphicData>
+      <color>(235,135,100)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggCinnamonQueenFertilized</defName>
+    <label>chicken egg (fert.)</label>
+    <description>A fertilized chicken egg. If all goes well, it should hatch into a chick.</description>
+    <graphicData>
+      <color>(235,135,100)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>2.1</hatcherDaystoHatch>
+        <hatcherPawn>CinnamonQueen</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>EggBielefelderUnfertilized</defName>
+    <label>chicken egg (unfert.)</label>
+    <description>An unfertilized chicken egg.</description>
+    <graphicData>
+      <color>(125,85,45)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggBielefelderFertilized</defName>
+    <label>chicken egg (fert.)</label>
+    <description>A fertilized chicken egg. If all goes well, it should hatch into a chick.</description>
+    <graphicData>
+      <color>(125,85,45)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>1.8</hatcherDaystoHatch>
+        <hatcherPawn>BielefelderChicken</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

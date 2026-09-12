@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Poultry Variety Pack Renew</name>
+  <author>SirTalis - 1.6 port: nelim</author>
+  <packageId>nelim.poultryvarietypackrenew</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <url>https://github.com/vbardales/Rimworld-Poultry-Variety-Pack-Renew</url>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <description>Six birds, brought forward to RimWorld 1.6: three chicken breeds and three ducks, with the Marans in four colours.
+
+I am not the author of this mod. All six birds are SirTalis's; all I did was the work needed to make them run on 1.6. Credit goes to them, mistakes in the update are mine. If they come back to it, or ask me to take this down, it comes down.
+
+Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2749575684 - last supporting 1.3, last updated in February 2022. Abandoned, not withdrawn.
+
+WHAT IT ADDS
+
+Six birds and their eggs.
+
+The Marans chicken, in four colours - blue copper, black copper, birchen and silver cuckoo - each with its own chick, rooster and hen. The Cinnamon Queen and the Bielefelder. And three ducks: the runner, the muscovy and the rouen.
+
+WHAT CHANGED IN THE 1.6 UPDATE
+
+The colours had to change hands, and that is the whole of the work.
+
+They came from AnimalVariations.dll, a library shipped with the original, third-party, without sources, which does not survive the render tree RimWorld moved to in 1.5. Vanilla can do the same job for a simple case, and the squirrels of this author's other pack were converted that way - but not here: alternateGraphics fixes one texture used from chick to adult, and a Marans needs three per colour. So this mod carries a small assembly of its own, one def extension and one render patch, which reproduces what the old library's SkinSet files described, with the original weights. The colour drawn for a chick is the colour it keeps as a hen.
+
+Two defects of the original are fixed. A patch replaced the hen's three life stages with two while its race declares three, which RimWorld rejects outright; the patch is dropped and the base def kept, having been correct all along. And the Bielefelder's egg looked for a hatcher named Bielefelder where the bird is BielefelderChicken, so it never hatched.
+
+Wildness also moved: it stopped being a field of RaceProperties in 1.6 and became a StatDef declared under statBases, so the old value was read by nothing.
+
+No balance value was changed.
+
+Content mod: removing it mid-save will lose any of these birds, and any of their eggs, already in play.
+
+Source, changelog and the full account of the port: https://github.com/vbardales/Rimworld-Poultry-Variety-Pack-Renew
+
+The original states no licence anywhere - no file, nothing in its About, no repository, nothing on its Workshop page. This port therefore rests on the Workshop's own custom for abandoned mods: named credit to the author, and a takedown on request.
+
+If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
+
+The update work was done with the help of an AI assistant (Claude, by Anthropic).</description>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>Ludeon.RimWorld.Ideology</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+    <li>Ludeon.RimWorld.Anomaly</li>
+    <li>Ludeon.RimWorld.Odyssey</li>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+  <!-- The source mod defines the same defNames as this port. RimWorld resolves a duplicate defName by
+       load order and logs nothing, so with both enabled one silently stands in for the other and the
+       two defects this port fixes come back unannounced.
+
+       Its packageId is spelled <packageID> in its own About.xml, with a capital D, which is not the
+       field RimWorld reads. The value below is what its author meant to declare; if the game does not
+       see it either, this line simply never matches, which costs nothing. -->
+  <incompatibleWith>
+    <li>sirtalis.poultrypack</li>
+  </incompatibleWith>
+</ModMetaData>

@@ -1,0 +1,30 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      # Reference assemblies come from NuGet (Krafs.Rimworld.Ref and Lib.Harmony), so no RimWorld
+      # installation is needed and nothing has to be stubbed out: this mod depends on neither a
+      # framework nor another mod.
+      # The assembly is deleted first because it is committed, so the check below would otherwise
+      # pass on the file from the repository whatever the build did.
+      - name: Build
+        run: |
+          rm -f Mod/Assemblies/PoultryVarietyPack.dll
+          dotnet build Source/PoultryVarietyPack.csproj -c Release --nologo
+
+      - name: Check the built assembly exists
+        run: test -f Mod/Assemblies/PoultryVarietyPack.dll

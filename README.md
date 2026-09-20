@@ -63,7 +63,7 @@ other of my mods, including publishing a continuation of it. All credit must be 
 ## Credits
 
 - **SirTalis** — the mod, all six birds, and their textures.
-- 1.6 update by nelim. Written with the help of Claude (Anthropic).
+- 1.6 update by Nelim. Written with the help of Claude (Anthropic).
 
 See [ATTRIBUTION.md](ATTRIBUTION.md) for the licence check, the colour machinery and the port in
 detail.

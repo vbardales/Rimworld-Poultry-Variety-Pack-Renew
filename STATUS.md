@@ -292,3 +292,7 @@ outside its inventory, wanted). `FRENCH_REVIEW.md` regenerated. ChatGPT review (
 French to review at the time; its English finds were applied (Bielefelder typos, `desiccated`
 in CHANGELOG). Owner review of the French (6.g) is pending: `translation_fr: partial`.
 Stage `writeTests[1.0.0]`; first unmet there: no written scenarios, no automated tests.
+
+ChatGPT review page 1 of the French (2026-10-27): applied the agreement fix on the Rouen and Runner
+duck descriptions (`Cette race est une bonne pondeuse`). Not applied: Bielefelder `plusieurs
+races de poules`, it departs from the English source (`several existing chickens`).

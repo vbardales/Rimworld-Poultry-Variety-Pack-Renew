@@ -43,7 +43,7 @@
   <!-- EN: Rouen duck -->
   <RouenDuck.label>canard de Rouen</RouenDuck.label>
   <!-- EN: An unusual duck that stands upright. It is a good layer, but a terrible sitter. -->
-  <RouenDuck.description>Un canard inhabituel qui se tient debout. C’est une bonne pondeuse, mais une très mauvaise couveuse.</RouenDuck.description>
+  <RouenDuck.description>Un canard inhabituel qui se tient debout. Cette race est une bonne pondeuse, mais une très mauvaise couveuse.</RouenDuck.description>
   <!-- EN: claws -->
   <RouenDuck.tools.claws.label>griffes</RouenDuck.tools.claws.label>
   <!-- EN: beak -->
@@ -53,7 +53,7 @@
   <!-- EN: Runner duck -->
   <RunnerDuck.label>canard coureur indien</RunnerDuck.label>
   <!-- EN: An unusual duck that stands upright. It is a good layer, but a terrible sitter. -->
-  <RunnerDuck.description>Un canard inhabituel qui se tient debout. C’est une bonne pondeuse, mais une très mauvaise couveuse.</RunnerDuck.description>
+  <RunnerDuck.description>Un canard inhabituel qui se tient debout. Cette race est une bonne pondeuse, mais une très mauvaise couveuse.</RunnerDuck.description>
   <!-- EN: claws -->
   <RunnerDuck.tools.claws.label>griffes</RunnerDuck.tools.claws.label>
   <!-- EN: beak -->

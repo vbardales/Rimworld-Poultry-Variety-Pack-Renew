@@ -69,6 +69,9 @@ The update work was done with the help of an AI assistant (Claude, by Anthropic)
        Its packageId is spelled <packageID> in its own About.xml, with a capital D, which is not the
        field RimWorld reads. The value below is what its author meant to declare; if the game does not
        see it either, this line simply never matches, which costs nothing. -->
+  <loadBefore>
+    <li>SamBucher.ADogSaidAnimalProsthetics2</li>
+  </loadBefore>
   <incompatibleWith>
     <li>sirtalis.poultrypack</li>
   </incompatibleWith>

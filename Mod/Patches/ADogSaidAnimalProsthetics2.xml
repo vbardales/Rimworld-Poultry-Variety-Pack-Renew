@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- A Dog Said... Animal Prosthetics 2 (SamBucher.ADogSaidAnimalProsthetics2, 3238353862).
+
+       Read in 1.6/Defs/AnimalCategories/Animal_Categories.xml of that mod: three abstract RecipeDefs,
+       ADS_Cat1 (basic replacements), ADS_Cat2 (1 + simple prosthetics) and ADS_Cat3 (2 + bionics), each
+       listing its animals under recipeUsers. The lists are cumulative: an animal of Cat3 is in all three.
+
+       The birds follow their vanilla analogues. Chicken is in ADS_Cat1 only, so the three chickens go
+       there. Duck is in ADS_Cat2 and ADS_Cat1, so the three ducks go to both. None is in ADS_Cat3.
+
+       Guarded by PatchOperationConditional on ADS_Cat1: without the mod nothing matches, nothing changes
+       and nothing is logged. MayRequire would not do here, nothing reads it on an <Operation>. The mod
+       is declared loadBefore in About.xml, since ADS 2 copies its lists once, at its last patch. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[@Name="ADS_Cat1"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[@Name="ADS_Cat1"]/recipeUsers</xpath>
+          <value>
+            <li>MaranChicken</li>
+            <li>CinnamonQueen</li>
+            <li>BielefelderChicken</li>
+            <li>RunnerDuck</li>
+            <li>MuscovyDuck</li>
+            <li>RouenDuck</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[@Name="ADS_Cat2"]/recipeUsers</xpath>
+          <value>
+            <li>RunnerDuck</li>
+            <li>MuscovyDuck</li>
+            <li>RouenDuck</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

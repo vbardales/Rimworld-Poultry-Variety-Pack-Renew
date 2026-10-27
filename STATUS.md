@@ -8,7 +8,7 @@ repo:         Rimworld-Poultry-Variety-Pack-Renew
 remote:       https://github.com/vbardales/Rimworld-Poultry-Variety-Pack-Renew.git
 visibility:   public
 detached:     yes
-workflow_stage: declareDependencies[1.0.0]
+workflow_stage: localize[1.0.0]
 licence:      silent
 licence_at:   "2026-09-13: no licence anywhere, and the source stopped at 1.3 in February 2022"
 upstream_mod_remotes: N/A
@@ -248,3 +248,30 @@ Stage `declareDependencies[1.0.0]`. First unmet criteria: 4.f (this mod adds ani
 optional integrations of ANIMALS.md, ADS 2, Nocturnal Animals, Dogs mate, Better Crossbreeding,
 are neither patched nor recorded with a reason) and 4.g (dependency, integration and DLC list with
 date and revision).
+
+### Dependencies and integrations - 2026-10-27 (declareDependencies, 4.a to 4.g)
+
+Revision: working tree on top of `0c79ab2`. Verified in sources, not from intent.
+
+- **Hard dependency: Harmony** (`brrainz.harmony`), declared with Workshop URL and download URL; the
+  startup class installs the render postfix. `loadAfter`: Ludeon.RimWorld, Royalty, Ideology, Biotech,
+  Anomaly, Odyssey, Harmony. No DLC is required and no Def references one (Core-only
+  `Check-DefRefs.ps1` passes). No `LoadFolders.xml`, no `MayRequire`, `supportedVersions` is 1.6.
+- **Incompatible**: `sirtalis.poultrypack` (the source mod, same defNames).
+- **ANIMALS.md integrations**, classified by the vanilla analogue (Chicken, Duck), nothing is a dependency:
+  - A Dog Said... Animal Prosthetics 2: patched, `Mod/Patches/ADogSaidAnimalProsthetics2.xml`. The three
+    chickens join ADS_Cat1 (vanilla Chicken is in Cat1 only), the three ducks ADS_Cat1 and ADS_Cat2
+    (vanilla Duck). Guarded by `PatchOperationConditional` on ADS_Cat1; `loadBefore`
+    `SamBucher.ADogSaidAnimalProsthetics2` in About.xml. Applied to the mod's real Animal_Categories.xml
+    with lxml: expected lists, and no match on an empty document. Test suite still to write (writeTests).
+  - [XND] Nocturnal Animals: no patch. Its Core patches name no Chicken or Duck, so vanilla analogues stay
+    diurnal; a bird it does not name stays diurnal.
+  - Dogs mate (Continued): no patch. Its groups are Canidae, Felidae, Mammalia; none holds a bird.
+  - Better Crossbreeding: no patch, decision: vanilla Chicken and Duck declare no `canCrossBreedWith`,
+    and the six breeds are variants of those species, not new crossbreeds. To submit to the owner if
+    breed-to-breed outcomes are wanted.
+- DLC: none required. Load order has no cycle (only `loadAfter` on vanilla and Harmony, one `loadBefore`).
+
+Stage 4 met. Stage 5 met by the 2026-09-13 settings audit (`not_applicable`, sources checked: no page,
+no shortcut). Stage `localize[1.0.0]`; first unmet there: 6.c (no French), 6.g (owner review) and the
+Bielefelder English text.

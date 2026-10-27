@@ -15,7 +15,7 @@ upstream_mod_remotes: N/A
 dependencies: verified
 settings_audit: not_applicable
 tested_on: never
-workshop: none
+workshop: 3811382762
 published: no
 remaining:
   - unverified: never seen running
@@ -237,7 +237,7 @@ source), Preview.png 743 KB, `Art/` reduced to the minimal set (`echo-preview.pn
 `Art/Preview-source.png`: 3 families, Vmean 0.518. The other 2.e checks were made by eye, no
 defect noted. Stage 3 first unmet: 3.a (RouenDuck `065` still open) and 3.c (CHANGELOG
 heading). Stage: `code[1.0.0]`. `workshop` stays `none` although `Mod/About/PublishedFileId.txt`
-holds 3811382762: to settle with the owner.
+holds 3811382762: kept, it is the right id (owner, 2026-10-27); `workshop` records it, `published` stays no.
 
 ### Stage 3 closed - 2026-10-27
 

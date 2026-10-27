@@ -16,3 +16,6 @@ Source/bin/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Preview render intermediates
+Art/.render/

@@ -5,6 +5,7 @@
     "suffix":"Renew","tagInline":true,
     "copyLines":["Six birds and their eggs.", "Three chickens, three ducks."]
   },
+  "modIconSource":"ModIcon-source.png",
   "backgroundFile":"Preview-source.png",
   "icon":{"file":"ModIcon-source.png","corner":"bottom-left"},
   "palette":{"veil":"#47311F","inkPrimary":"#F5EFE5","inkSecondary":"#F0C269","accent":"#E95B2A","badgeInk":"#17120E"}

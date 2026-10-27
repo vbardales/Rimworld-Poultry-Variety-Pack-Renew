@@ -7,7 +7,7 @@
   },
   "modIconSource":"ModIcon-source.png",
   "backgroundFile":"Preview-source.png",
-  "echo":{"file":"echo-preview.png","color":"var(--accent)","width":185,"height":170},
+  "echo":{"file":"echo-source.png","color":"var(--accent)","width":185,"height":170},
   "icon":{"file":"ModIcon-source.png","corner":"bottom-left"},
   "palette":{"veil":"#47311F","inkPrimary":"#F5EFE5","inkSecondary":"#F0C269","accent":"#E95B2A","badgeInk":"#17120E"}
 }

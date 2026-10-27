@@ -2,26 +2,25 @@
 localization: complete
 translation_en: partial
 translation_fr: partial
-mod:          Poultry Variety Pack Renew
+mod:          Poultry Variety Pack Renew (unofficial)
 packageId:    nelim.poultryvarietypackrenew
 repo:         Rimworld-Poultry-Variety-Pack-Renew
+remote:       https://github.com/vbardales/Rimworld-Poultry-Variety-Pack-Renew.git
 visibility:   public
 detached:     yes
-workflow_stage: setupRepo
+workflow_stage: code[1.0.0]
 licence:      silent
-licence_at:   no licence anywhere, and the source stopped at 1.3 in February 2022
+licence_at:   "2026-09-13: no licence anywhere, and the source stopped at 1.3 in February 2022"
+upstream_mod_remotes: N/A
 dependencies: verified
-showcase:     partial
 settings_audit: not_applicable
-tested_on:
-workshop:
+tested_on: never
+workshop: none
+published: no
 remaining:
-  - defect: 1.d suffix ' (unofficial)' absent from About name, README title, STATUS mod field
-  - defect: 1.h STATUS.md not built from templates/STATUS.template.md (remote, upstream_mod_remotes absent)
+  - defect: CHANGELOG.md heading is [1.0.0] - unreleased, not ## [Unreleased] (3.c); its release note still lists ModIcon and Preview as to add
   - unverified: never seen running
   - defect: RouenDuck juvenile dessicatedBodyGraphicData.drawSize is 065
-  - defect: public silent naming and UNOFFICIAL notice are missing
-  - defect: About description lacks the required final Source code on GitHub link
   - defect: French coverage is absent for 75 owned text fields
   - defect: English Bielefelder labelFemale is CBielefelder hen; description has spelling errors
   - feature: written functional scenarios and automated behavior tests are absent
@@ -228,3 +227,16 @@ description and README title), plus 1.h (STATUS.md not from the template). Retai
 `setupRepo` (was `horsMonoRepo`, mapped to `makeSources`). Later findings of the
 2026-09-13 audit stay valid. ModIcon.png and Preview.png now exist; Preview regeneration
 rendered 2026-10-27 with Art/echo-preview.png (owner line-art rooster); ModIcon-source.png trimmed by badge mode (1254x1254 to 1060x1029), padding check passes.
+
+### Re-audit continuation - 2026-10-27
+
+1.d and 1.h fixed: ` (unofficial)` in About name, README title and `mod`; UNOFFICIAL paragraph in
+About description and README; final `[url=...]Source code on GitHub[/url]` link; front matter
+rebuilt on the template; description no longer names a RimWorld version. Stage 2 criteria met:
+icon and Preview sources present, derivatives regenerated (badge mode, 1060x1029 trimmed
+source), Preview.png 743 KB, `Art/` reduced to the minimal set (`echo-preview.png` renamed
+`echo-source.png`, `echo-concept.png` removed), `Art/.render/` ignored. `Measure-Palette.sh` on
+`Art/Preview-source.png`: 3 families, Vmean 0.518. The other 2.e checks were made by eye, no
+defect noted. Stage 3 first unmet: 3.a (RouenDuck `065` still open) and 3.c (CHANGELOG
+heading). Stage: `code[1.0.0]`. `workshop` stays `none` although `Mod/About/PublishedFileId.txt`
+holds 3811382762: to settle with the owner.

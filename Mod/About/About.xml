@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Poultry Variety Pack Renew</name>
+  <name>Poultry Variety Pack Renew (unofficial)</name>
   <author>SirTalis - 1.6 adapted by Nelim</author>
   <packageId>nelim.poultryvarietypackrenew</packageId>
   <supportedVersions>
@@ -15,9 +15,12 @@
       <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
     </li>
   </modDependencies>
-  <description>Six birds, brought forward to RimWorld 1.6: three chicken breeds and three ducks, with the Marans in four colours.
+  <description>UNOFFICIAL. This mod is published without the original author's explicit consent.
+If the original author contacts me to request its removal, I undertake to take it down promptly.
 
-I am not the author of this mod. All six birds are SirTalis's; all I did was the work needed to make them run on 1.6. Credit goes to them, mistakes in the update are mine. If they come back to it, or ask me to take this down, it comes down.
+Six birds, brought forward to the latest RimWorld version: three chicken breeds and three ducks, with the Marans in four colours.
+
+I am not the author of this mod. All six birds are SirTalis's; all I did was the work needed to make them run on the latest RimWorld version. Credit goes to them, mistakes in the update are mine. If they come back to it, or ask me to take this down, it comes down.
 
 Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2749575684 - last supporting 1.3, last updated in February 2022. Abandoned, not withdrawn.
 
@@ -27,7 +30,7 @@ Six birds and their eggs.
 
 The Marans chicken, in four colours - blue copper, black copper, birchen and silver cuckoo - each with its own chick, rooster and hen. The Cinnamon Queen and the Bielefelder. And three ducks: the runner, the muscovy and the rouen.
 
-WHAT CHANGED IN THE 1.6 UPDATE
+WHAT CHANGED IN THE UPDATE
 
 The colours had to change hands, and that is the whole of the work.
 
@@ -35,7 +38,7 @@ They came from AnimalVariations.dll, a library shipped with the original, third-
 
 Two defects of the original are fixed. A patch replaced the hen's three life stages with two while its race declares three, which RimWorld rejects outright; the patch is dropped and the base def kept, having been correct all along. And the Bielefelder's egg looked for a hatcher named Bielefelder where the bird is BielefelderChicken, so it never hatched.
 
-Wildness also moved: it stopped being a field of RaceProperties in 1.6 and became a StatDef declared under statBases, so the old value was read by nothing.
+Wildness also moved: it stopped being a field of RaceProperties in the update and became a StatDef declared under statBases, so the old value was read by nothing.
 
 No balance value was changed.
 
@@ -47,7 +50,9 @@ The original states no licence anywhere - no file, nothing in its About, no repo
 
 If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
 
-The update work was done with the help of an AI assistant (Claude, by Anthropic).</description>
+The update work was done with the help of an AI assistant (Claude, by Anthropic).
+
+[url=https://github.com/vbardales/Rimworld-Poultry-Variety-Pack-Renew]Source code on GitHub[/url]</description>
   <loadAfter>
     <li>Ludeon.RimWorld</li>
     <li>Ludeon.RimWorld.Royalty</li>

@@ -1,7 +1,7 @@
 ---
 localization: complete
 translation_en: complete
-translation_fr: partial
+translation_fr: complete
 mod:          Poultry Variety Pack Renew (unofficial)
 packageId:    nelim.poultryvarietypackrenew
 repo:         Rimworld-Poultry-Variety-Pack-Renew
@@ -18,7 +18,6 @@ tested_on: never
 workshop: 3811382762
 published: no
 remaining:
-  - unverified: French texts in Languages/French not yet reviewed by the owner (6.g); translation_fr stays partial until then
   - unverified: French and English rendering in game (raw keys, truncation), plurals of the six breeds (labelPlural injected)
   - unverified: never seen running
   - feature: written functional scenarios and automated behavior tests are absent
@@ -296,3 +295,7 @@ Stage `writeTests[1.0.0]`; first unmet there: no written scenarios, no automated
 ChatGPT review page 1 of the French (2026-10-27): applied the agreement fix on the Rouen and Runner
 duck descriptions (`Cette race est une bonne pondeuse`). Not applied: Bielefelder `plusieurs
 races de poules`, it departs from the English source (`several existing chickens`).
+
+French review (6.g): reviewed and validated by Virginie on 2026-10-27, at revision `4c01ea626a0ce252e9e4d25d86913b34fef8fa5d`, no
+correction beyond the two agreement fixes already applied. `translation_fr: complete`. In-game
+rendering (raw keys, truncation, plurals) stays unverified until playTests.

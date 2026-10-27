@@ -18,7 +18,6 @@ workshop:
 remaining:
   - defect: 1.d suffix ' (unofficial)' absent from About name, README title, STATUS mod field
   - defect: 1.h STATUS.md not built from templates/STATUS.template.md (remote, upstream_mod_remotes absent)
-  - unverified: Preview rendered without echo (owner, 2026-10-27: no echo until a Preview exists); echo is mountPreview work
   - unverified: never seen running
   - defect: RouenDuck juvenile dessicatedBodyGraphicData.drawSize is 065
   - defect: public silent naming and UNOFFICIAL notice are missing
@@ -228,4 +227,4 @@ Replayed from the chain start against current protocols. First unmet criterion: 
 description and README title), plus 1.h (STATUS.md not from the template). Retained state:
 `setupRepo` (was `horsMonoRepo`, mapped to `makeSources`). Later findings of the
 2026-09-13 audit stay valid. ModIcon.png and Preview.png now exist; Preview regeneration
-rendered 2026-10-27 without echo (owner decision); ModIcon-source.png trimmed by badge mode (1254x1254 to 1060x1029), padding check passes.
+rendered 2026-10-27 with Art/echo-preview.png (owner line-art rooster); ModIcon-source.png trimmed by badge mode (1254x1254 to 1060x1029), padding check passes.

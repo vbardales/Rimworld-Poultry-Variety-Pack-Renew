@@ -5,7 +5,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>BielefelderChicken</defName>
     <label>Bielefelder chicken</label>
-    <description>A recent cross betwen several existing chickens created this breed that lays noticably larger eggs.</description>
+    <description>A recent cross between several existing chickens created this breed that lays noticeably larger eggs.</description>
     <statBases>
       <Wildness>0</Wildness>
       <MoveSpeed>2.1</MoveSpeed>
@@ -95,7 +95,7 @@
     <defName>BielefelderChicken</defName>
     <label>Bielefelder Chicken</label>
     <labelMale>Bielefelder rooster</labelMale>
-    <labelFemale>CBielefelder hen</labelFemale>
+    <labelFemale>Bielefelder hen</labelFemale>
     <race>BielefelderChicken</race>
     <combatPower>30</combatPower>
     <ecoSystemWeight>0.20</ecoSystemWeight>

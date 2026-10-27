@@ -36,7 +36,7 @@ First release of the 1.6 update of **Poultry Variety Pack**, by SirTalis.
   with it, since it would have coloured all four variants alike.
 - **The Bielefelder's egg hatches.** It looked for a `hatcherPawn` named `Bielefelder` where the bird
   is `BielefelderChicken`. An original typo, not a 1.6 change.
-- **The Rouen duck's dessicated corpse scale.** The juvenile's `drawSize` read `065`, a scale of 65
+- **The Rouen duck's desiccated corpse scale.** The juvenile's `drawSize` read `065`, a scale of 65
   instead of 0.65. Corrected to `0.65`.
 
 ### Changed

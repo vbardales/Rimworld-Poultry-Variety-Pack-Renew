@@ -1,6 +1,6 @@
 ---
 localization: complete
-translation_en: partial
+translation_en: complete
 translation_fr: partial
 mod:          Poultry Variety Pack Renew (unofficial)
 packageId:    nelim.poultryvarietypackrenew
@@ -8,7 +8,7 @@ repo:         Rimworld-Poultry-Variety-Pack-Renew
 remote:       https://github.com/vbardales/Rimworld-Poultry-Variety-Pack-Renew.git
 visibility:   public
 detached:     yes
-workflow_stage: localize[1.0.0]
+workflow_stage: writeTests[1.0.0]
 licence:      silent
 licence_at:   "2026-09-13: no licence anywhere, and the source stopped at 1.3 in February 2022"
 upstream_mod_remotes: N/A
@@ -18,9 +18,9 @@ tested_on: never
 workshop: 3811382762
 published: no
 remaining:
+  - unverified: French texts in Languages/French not yet reviewed by the owner (6.g); translation_fr stays partial until then
+  - unverified: French and English rendering in game (raw keys, truncation), plurals of the six breeds (labelPlural injected)
   - unverified: never seen running
-  - defect: French coverage is absent for 75 owned text fields
-  - defect: English Bielefelder labelFemale is CBielefelder hen; description has spelling errors
   - feature: written functional scenarios and automated behavior tests are absent
   - unverified: in-game scenarios, logs, EN/FR display and save compatibility
 session:      local_fefdc0a0-c53d-45f3-b38c-7deeab47cdd4
@@ -275,3 +275,20 @@ Revision: working tree on top of `0c79ab2`. Verified in sources, not from intent
 Stage 4 met. Stage 5 met by the 2026-09-13 settings audit (`not_applicable`, sources checked: no page,
 no shortcut). Stage `localize[1.0.0]`; first unmet there: 6.c (no French), 6.g (owner review) and the
 Bielefelder English text.
+
+### Translation audit - 2026-10-27 (localize, 6.a to 6.h)
+
+Inventory: 48 source texts plus 25 nested (tool and life-stage labels) in seven Def files; no
+Keyed text, no code-generated text, no settings. English source fallback covers EN; the
+Bielefelder typos (`betwen`, `noticably`, `CBielefelder hen`) are fixed. French:
+`Mod/Languages/French/DefInjected/{ThingDef,PawnKindDef}` written 2026-10-27 by the session
+(birds: poulet/coq/poule, canard de Barbarie, canard de Rouen, canard coureur indien, caneton,
+poussin; eggs: non fécondé / fécondé). Plurals, male and female plurals are injected for the pawn
+kinds so the French worker does not append `s` to a breed name (`poulets Marans`). No pawn token, no
+`tu` or `vous`, no gender agreement to switch. Tool labels use handles, life stages use label
+handles (`duckling`, `chick`, `Marans_chick`, `Marans_chicken`) as `Check-DefInjected.ps1` requires.
+`Check-DefInjected.ps1`: 96 keys, 0 errors. `Check-Translations.ps1`: PASS, 19 WARN (plural paths
+outside its inventory, wanted). `FRENCH_REVIEW.md` regenerated. ChatGPT review (page 1) found no
+French to review at the time; its English finds were applied (Bielefelder typos, `desiccated`
+in CHANGELOG). Owner review of the French (6.g) is pending: `translation_fr: partial`.
+Stage `writeTests[1.0.0]`; first unmet there: no written scenarios, no automated tests.

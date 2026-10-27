@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: duck egg (unfert.) -->
+  <EggRunnerDuckUnfertilized.label>œuf de canard (non fécondé)</EggRunnerDuckUnfertilized.label>
+  <!-- EN: An unfertilized duck egg. -->
+  <EggRunnerDuckUnfertilized.description>Un œuf de canard non fécondé.</EggRunnerDuckUnfertilized.description>
+  <!-- EN: duck egg (fert.) -->
+  <EggRunnerDuckFertilized.label>œuf de canard (fécondé)</EggRunnerDuckFertilized.label>
+  <!-- EN: A fertilized duck egg. If all goes well, it should hatch into a duckling. -->
+  <EggRunnerDuckFertilized.description>Un œuf de canard fécondé. Si tout se passe bien, il devrait éclore en caneton.</EggRunnerDuckFertilized.description>
+  <!-- EN: duck egg (unfert.) -->
+  <EggRouenDuckUnfertilized.label>œuf de canard (non fécondé)</EggRouenDuckUnfertilized.label>
+  <!-- EN: An unfertilized duck egg. -->
+  <EggRouenDuckUnfertilized.description>Un œuf de canard non fécondé.</EggRouenDuckUnfertilized.description>
+  <!-- EN: duck egg (fert.) -->
+  <EggRouenDuckFertilized.label>œuf de canard (fécondé)</EggRouenDuckFertilized.label>
+  <!-- EN: A fertilized duck egg. If all goes well, it should hatch into a duckling. -->
+  <EggRouenDuckFertilized.description>Un œuf de canard fécondé. Si tout se passe bien, il devrait éclore en caneton.</EggRouenDuckFertilized.description>
+  <!-- EN: duck egg (unfert.) -->
+  <EggMuscovyDuckUnfertilized.label>œuf de canard (non fécondé)</EggMuscovyDuckUnfertilized.label>
+  <!-- EN: An unfertilized duck egg. -->
+  <EggMuscovyDuckUnfertilized.description>Un œuf de canard non fécondé.</EggMuscovyDuckUnfertilized.description>
+  <!-- EN: duck egg (fert.) -->
+  <EggMuscovyDuckFertilized.label>œuf de canard (fécondé)</EggMuscovyDuckFertilized.label>
+  <!-- EN: A fertilized duck egg. If all goes well, it should hatch into a duckling. -->
+  <EggMuscovyDuckFertilized.description>Un œuf de canard fécondé. Si tout se passe bien, il devrait éclore en caneton.</EggMuscovyDuckFertilized.description>
+  <!-- EN: chicken egg (unfert.) -->
+  <EggMaransUnfertilized.label>œuf de poule (non fécondé)</EggMaransUnfertilized.label>
+  <!-- EN: An unfertilized chicken egg. -->
+  <EggMaransUnfertilized.description>Un œuf de poule non fécondé.</EggMaransUnfertilized.description>
+  <!-- EN: chicken egg (fert.) -->
+  <EggMaransFertilized.label>œuf de poule (fécondé)</EggMaransFertilized.label>
+  <!-- EN: A fertilized chicken egg. If all goes well, it should hatch into a chick. -->
+  <EggMaransFertilized.description>Un œuf de poule fécondé. Si tout se passe bien, il devrait éclore en poussin.</EggMaransFertilized.description>
+  <!-- EN: chicken egg (unfert.) -->
+  <EggCinnamonQueenUnfertilized.label>œuf de poule (non fécondé)</EggCinnamonQueenUnfertilized.label>
+  <!-- EN: An unfertilized chicken egg. -->
+  <EggCinnamonQueenUnfertilized.description>Un œuf de poule non fécondé.</EggCinnamonQueenUnfertilized.description>
+  <!-- EN: chicken egg (fert.) -->
+  <EggCinnamonQueenFertilized.label>œuf de poule (fécondé)</EggCinnamonQueenFertilized.label>
+  <!-- EN: A fertilized chicken egg. If all goes well, it should hatch into a chick. -->
+  <EggCinnamonQueenFertilized.description>Un œuf de poule fécondé. Si tout se passe bien, il devrait éclore en poussin.</EggCinnamonQueenFertilized.description>
+  <!-- EN: chicken egg (unfert.) -->
+  <EggBielefelderUnfertilized.label>œuf de poule (non fécondé)</EggBielefelderUnfertilized.label>
+  <!-- EN: An unfertilized chicken egg. -->
+  <EggBielefelderUnfertilized.description>Un œuf de poule non fécondé.</EggBielefelderUnfertilized.description>
+  <!-- EN: chicken egg (fert.) -->
+  <EggBielefelderFertilized.label>œuf de poule (fécondé)</EggBielefelderFertilized.label>
+  <!-- EN: A fertilized chicken egg. If all goes well, it should hatch into a chick. -->
+  <EggBielefelderFertilized.description>Un œuf de poule fécondé. Si tout se passe bien, il devrait éclore en poussin.</EggBielefelderFertilized.description>
+</LanguageData>

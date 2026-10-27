@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Bielefelder Chicken -->
+  <BielefelderChicken.label>poulet Bielefelder</BielefelderChicken.label>
+  <BielefelderChicken.labelPlural>poulets Bielefelder</BielefelderChicken.labelPlural>
+  <!-- EN: Bielefelder rooster -->
+  <BielefelderChicken.labelMale>coq Bielefelder</BielefelderChicken.labelMale>
+  <BielefelderChicken.labelMalePlural>coqs Bielefelder</BielefelderChicken.labelMalePlural>
+  <!-- EN: Bielefelder hen -->
+  <BielefelderChicken.labelFemale>poule Bielefelder</BielefelderChicken.labelFemale>
+  <BielefelderChicken.labelFemalePlural>poules Bielefelder</BielefelderChicken.labelFemalePlural>
+  <!-- EN: chick -->
+  <BielefelderChicken.lifeStages.chick.label>poussin</BielefelderChicken.lifeStages.chick.label>
+  <BielefelderChicken.lifeStages.chick.labelPlural>poussins</BielefelderChicken.lifeStages.chick.labelPlural>
+  <!-- EN: Cinnamon Queen -->
+  <CinnamonQueen.label>poulet Cinnamon Queen</CinnamonQueen.label>
+  <CinnamonQueen.labelPlural>poulets Cinnamon Queen</CinnamonQueen.labelPlural>
+  <!-- EN: Cinnamon Queen rooster -->
+  <CinnamonQueen.labelMale>coq Cinnamon Queen</CinnamonQueen.labelMale>
+  <CinnamonQueen.labelMalePlural>coqs Cinnamon Queen</CinnamonQueen.labelMalePlural>
+  <!-- EN: Cinnamon Queen hen -->
+  <CinnamonQueen.labelFemale>poule Cinnamon Queen</CinnamonQueen.labelFemale>
+  <CinnamonQueen.labelFemalePlural>poules Cinnamon Queen</CinnamonQueen.labelFemalePlural>
+  <!-- EN: chick -->
+  <CinnamonQueen.lifeStages.chick.label>poussin</CinnamonQueen.lifeStages.chick.label>
+  <CinnamonQueen.lifeStages.chick.labelPlural>poussins</CinnamonQueen.lifeStages.chick.labelPlural>
+  <!-- EN: Marans Chicken -->
+  <MaranChicken.label>poulet Marans</MaranChicken.label>
+  <MaranChicken.labelPlural>poulets Marans</MaranChicken.labelPlural>
+  <!-- EN: Marans rooster -->
+  <MaranChicken.labelMale>coq Marans</MaranChicken.labelMale>
+  <MaranChicken.labelMalePlural>coqs Marans</MaranChicken.labelMalePlural>
+  <!-- EN: Marans hen -->
+  <MaranChicken.labelFemale>poule Marans</MaranChicken.labelFemale>
+  <MaranChicken.labelFemalePlural>poules Marans</MaranChicken.labelFemalePlural>
+  <!-- EN: Marans chick -->
+  <MaranChicken.lifeStages.Marans_chick.label>poussin Marans</MaranChicken.lifeStages.Marans_chick.label>
+  <MaranChicken.lifeStages.Marans_chick.labelPlural>poussins Marans</MaranChicken.lifeStages.Marans_chick.labelPlural>
+  <!-- EN: Marans chicken -->
+  <MaranChicken.lifeStages.Marans_chicken.label>poulet Marans</MaranChicken.lifeStages.Marans_chicken.label>
+  <MaranChicken.lifeStages.Marans_chicken.labelPlural>poulets Marans</MaranChicken.lifeStages.Marans_chicken.labelPlural>
+  <!-- EN: Marans cockerel -->
+  <MaranChicken.lifeStages.Marans_chicken.labelMale>coquelet Marans</MaranChicken.lifeStages.Marans_chicken.labelMale>
+  <MaranChicken.lifeStages.Marans_chicken.labelMalePlural>coquelets Marans</MaranChicken.lifeStages.Marans_chicken.labelMalePlural>
+  <!-- EN: Marans pullet -->
+  <MaranChicken.lifeStages.Marans_chicken.labelFemale>poulette Marans</MaranChicken.lifeStages.Marans_chicken.labelFemale>
+  <MaranChicken.lifeStages.Marans_chicken.labelFemalePlural>poulettes Marans</MaranChicken.lifeStages.Marans_chicken.labelFemalePlural>
+  <!-- EN: Muscovy duck -->
+  <MuscovyDuck.label>canard de Barbarie</MuscovyDuck.label>
+  <MuscovyDuck.labelPlural>canards de Barbarie</MuscovyDuck.labelPlural>
+  <!-- EN: duckling -->
+  <MuscovyDuck.lifeStages.duckling.label>caneton</MuscovyDuck.lifeStages.duckling.label>
+  <MuscovyDuck.lifeStages.duckling.labelPlural>canetons</MuscovyDuck.lifeStages.duckling.labelPlural>
+  <!-- EN: Rouen duck -->
+  <RouenDuck.label>canard de Rouen</RouenDuck.label>
+  <RouenDuck.labelPlural>canards de Rouen</RouenDuck.labelPlural>
+  <!-- EN: duckling -->
+  <RouenDuck.lifeStages.duckling.label>caneton</RouenDuck.lifeStages.duckling.label>
+  <RouenDuck.lifeStages.duckling.labelPlural>canetons</RouenDuck.lifeStages.duckling.labelPlural>
+  <!-- EN: Runner duck -->
+  <RunnerDuck.label>canard coureur indien</RunnerDuck.label>
+  <RunnerDuck.labelPlural>canards coureurs indiens</RunnerDuck.labelPlural>
+  <!-- EN: duckling -->
+  <RunnerDuck.lifeStages.duckling.label>caneton</RunnerDuck.lifeStages.duckling.label>
+  <RunnerDuck.lifeStages.duckling.labelPlural>canetons</RunnerDuck.lifeStages.duckling.labelPlural>
+</LanguageData>

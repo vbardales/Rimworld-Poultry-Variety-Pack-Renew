@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Bielefelder chicken -->
+  <BielefelderChicken.label>poulet Bielefelder</BielefelderChicken.label>
+  <!-- EN: A recent cross between several existing chickens created this breed that lays noticeably larger eggs. -->
+  <BielefelderChicken.description>Un croisement récent entre plusieurs poulets existants a donné cette race, qui pond des œufs sensiblement plus gros.</BielefelderChicken.description>
+  <!-- EN: claws -->
+  <BielefelderChicken.tools.claws.label>griffes</BielefelderChicken.tools.claws.label>
+  <!-- EN: beak -->
+  <BielefelderChicken.tools.beak.label>bec</BielefelderChicken.tools.beak.label>
+  <!-- EN: head -->
+  <BielefelderChicken.tools.head.label>tête</BielefelderChicken.tools.head.label>
+  <!-- EN: Cinnamon Queen chicken -->
+  <CinnamonQueen.label>poulet Cinnamon Queen</CinnamonQueen.label>
+  <!-- EN: A crossbreed of two popular chicken breeds led to these great layers. -->
+  <CinnamonQueen.description>Le croisement de deux races de poulets populaires a donné ces excellentes pondeuses.</CinnamonQueen.description>
+  <!-- EN: claws -->
+  <CinnamonQueen.tools.claws.label>griffes</CinnamonQueen.tools.claws.label>
+  <!-- EN: beak -->
+  <CinnamonQueen.tools.beak.label>bec</CinnamonQueen.tools.beak.label>
+  <!-- EN: head -->
+  <CinnamonQueen.tools.head.label>tête</CinnamonQueen.tools.head.label>
+  <!-- EN: Marans chicken -->
+  <MaranChicken.label>poulet Marans</MaranChicken.label>
+  <!-- EN: A chicken that lays unusually dark eggs. -->
+  <MaranChicken.description>Un poulet qui pond des œufs d’une couleur inhabituellement foncée.</MaranChicken.description>
+  <!-- EN: claws -->
+  <MaranChicken.tools.claws.label>griffes</MaranChicken.tools.claws.label>
+  <!-- EN: beak -->
+  <MaranChicken.tools.beak.label>bec</MaranChicken.tools.beak.label>
+  <!-- EN: head -->
+  <MaranChicken.tools.head.label>tête</MaranChicken.tools.head.label>
+  <!-- EN: Muscovy duck -->
+  <MuscovyDuck.label>canard de Barbarie</MuscovyDuck.label>
+  <!-- EN: A large duck with facial wattles. Many feral populations of this breed exist on various planets. -->
+  <MuscovyDuck.description>Un gros canard à caroncules faciales. De nombreuses populations de cette race sont retournées à l’état sauvage sur diverses planètes.</MuscovyDuck.description>
+  <!-- EN: claws -->
+  <MuscovyDuck.tools.claws.label>griffes</MuscovyDuck.tools.claws.label>
+  <!-- EN: beak -->
+  <MuscovyDuck.tools.beak.label>bec</MuscovyDuck.tools.beak.label>
+  <!-- EN: head -->
+  <MuscovyDuck.tools.head.label>tête</MuscovyDuck.tools.head.label>
+  <!-- EN: Rouen duck -->
+  <RouenDuck.label>canard de Rouen</RouenDuck.label>
+  <!-- EN: An unusual duck that stands upright. It is a good layer, but a terrible sitter. -->
+  <RouenDuck.description>Un canard inhabituel qui se tient debout. C’est une bonne pondeuse, mais une très mauvaise couveuse.</RouenDuck.description>
+  <!-- EN: claws -->
+  <RouenDuck.tools.claws.label>griffes</RouenDuck.tools.claws.label>
+  <!-- EN: beak -->
+  <RouenDuck.tools.beak.label>bec</RouenDuck.tools.beak.label>
+  <!-- EN: head -->
+  <RouenDuck.tools.head.label>tête</RouenDuck.tools.head.label>
+  <!-- EN: Runner duck -->
+  <RunnerDuck.label>canard coureur indien</RunnerDuck.label>
+  <!-- EN: An unusual duck that stands upright. It is a good layer, but a terrible sitter. -->
+  <RunnerDuck.description>Un canard inhabituel qui se tient debout. C’est une bonne pondeuse, mais une très mauvaise couveuse.</RunnerDuck.description>
+  <!-- EN: claws -->
+  <RunnerDuck.tools.claws.label>griffes</RunnerDuck.tools.claws.label>
+  <!-- EN: beak -->
+  <RunnerDuck.tools.beak.label>bec</RunnerDuck.tools.beak.label>
+  <!-- EN: head -->
+  <RunnerDuck.tools.head.label>tête</RunnerDuck.tools.head.label>
+</LanguageData>

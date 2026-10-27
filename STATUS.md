@@ -8,7 +8,7 @@ repo:         Rimworld-Poultry-Variety-Pack-Renew
 remote:       https://github.com/vbardales/Rimworld-Poultry-Variety-Pack-Renew.git
 visibility:   public
 detached:     yes
-workflow_stage: code[1.0.0]
+workflow_stage: declareDependencies[1.0.0]
 licence:      silent
 licence_at:   "2026-09-13: no licence anywhere, and the source stopped at 1.3 in February 2022"
 upstream_mod_remotes: N/A
@@ -18,9 +18,7 @@ tested_on: never
 workshop: none
 published: no
 remaining:
-  - defect: CHANGELOG.md heading is [1.0.0] - unreleased, not ## [Unreleased] (3.c); its release note still lists ModIcon and Preview as to add
   - unverified: never seen running
-  - defect: RouenDuck juvenile dessicatedBodyGraphicData.drawSize is 065
   - defect: French coverage is absent for 75 owned text fields
   - defect: English Bielefelder labelFemale is CBielefelder hen; description has spelling errors
   - feature: written functional scenarios and automated behavior tests are absent
@@ -240,3 +238,13 @@ source), Preview.png 743 KB, `Art/` reduced to the minimal set (`echo-preview.pn
 defect noted. Stage 3 first unmet: 3.a (RouenDuck `065` still open) and 3.c (CHANGELOG
 heading). Stage: `code[1.0.0]`. `workshop` stays `none` although `Mod/About/PublishedFileId.txt`
 holds 3811382762: to settle with the owner.
+
+### Stage 3 closed - 2026-10-27
+
+RouenDuck `drawSize` corrected to `0.65`; CHANGELOG.md `## [Unreleased]` now states the target, the
+fix and the release steps. `Check-DefRefs.ps1` and `Check-XmlFields.ps1` pass again; sources are
+unchanged since the 2026-09-13 build and decompilation check, so the shipped DLL still matches them.
+Stage `declareDependencies[1.0.0]`. First unmet criteria: 4.f (this mod adds animals: the four
+optional integrations of ANIMALS.md, ADS 2, Nocturnal Animals, Dogs mate, Better Crossbreeding,
+are neither patched nor recorded with a reason) and 4.g (dependency, integration and DLC list with
+date and revision).

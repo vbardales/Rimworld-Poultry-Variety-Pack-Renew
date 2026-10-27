@@ -127,7 +127,7 @@
         </femaleGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
-          <drawSize>065</drawSize>
+          <drawSize>0.65</drawSize>
         </dessicatedBodyGraphicData>
         <femaleDessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>

@@ -314,3 +314,12 @@ not run: `Tests/Pickle` (5 features, `Poultry:` steps; the step assembly compile
 a patch, corpses). No local script: the mod uses the shared `Run-UnitTests.ps1`, nothing to declare in
 `scripts/LOCAL_SCRIPTS.md`. 7.g translations complete, French reviewed 2026-10-27. Run journal:
 `docs/runs/history.md`. Stage `playTests[1.0.0]`.
+
+### Ticket in the queue - 2026-10-28
+
+Pickle ticket `20261028-010953-494-9845` (English initial pass, all scenarios, tree at `3b3b3a4`, owner
+`local_a22cd457-08f9-4eb7-af8c-5b0168228148`, evidence to `Tests/Pickle/Inbox/initial-english`). On `RUN_DONE`: read
+`summary.json` then `junit.xml`, replay each red scenario alone, then the French pass and the `@review`
+captures (8.c to 8.h). The Pickle steps (`Tests/Pickle/Source/PoultrySteps.cs`) have never met a game: a red run
+can be a step fault. TicketDispatcher is not reachable by name; TM was asked to wake the session. 7.d still owes
+a declaration of the local steps to NPT (not in the session list on 2026-10-28).

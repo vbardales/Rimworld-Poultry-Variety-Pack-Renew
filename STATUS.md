@@ -8,7 +8,7 @@ repo:         Rimworld-Poultry-Variety-Pack-Renew
 remote:       https://github.com/vbardales/Rimworld-Poultry-Variety-Pack-Renew.git
 visibility:   public
 detached:     yes
-workflow_stage: writeTests[1.0.0]
+workflow_stage: playTests[1.0.0]
 licence:      silent
 licence_at:   "2026-09-13: no licence anywhere, and the source stopped at 1.3 in February 2022"
 upstream_mod_remotes: N/A
@@ -20,7 +20,7 @@ published: no
 remaining:
   - unverified: French and English rendering in game (raw keys, truncation), plurals of the six breeds (labelPlural injected)
   - unverified: never seen running
-  - feature: written functional scenarios and automated behavior tests are absent
+  - unverified: Pickle suite Tests/Pickle written 2026-10-28, never run (P01 to P07 of TEST_SCENARIOS.md), steps never met a game
   - unverified: in-game scenarios, logs, EN/FR display and save compatibility
 session:      local_fefdc0a0-c53d-45f3-b38c-7deeab47cdd4
 updated:      2026-10-27, workflow re-audit
@@ -299,3 +299,18 @@ races de poules`, it departs from the English source (`several existing chickens
 French review (6.g): reviewed and validated by Virginie on 2026-10-27, at revision `4c01ea626a0ce252e9e4d25d86913b34fef8fa5d`, no
 correction beyond the two agreement fixes already applied. `translation_fr: complete`. In-game
 rendering (raw keys, truncation, plurals) stays unverified until playTests.
+
+### Tests - 2026-10-28 (writeTests, 7.a to 7.h)
+
+Tested revision: `55aaeea10764b84e8d601683b94b0d5206fc727f` (no code commit after it changes what the tests check). 7.a
+`TEST_SCENARIOS.md` written (U01 to U10 console, P01 to P07 Pickle; figures checked: Marans weights sum 1.1,
+three life stages). 7.b and 7.c `Tests/` console project, replayed now: 15 passed, 0 failed
+(`scripts/Run-UnitTests.ps1 -ModRoot . -PreBuild Source/PoultryVarietyPack.csproj`), covering the skin-set
+logic, the shipped Marans XML and the ADS 2 patch run through RimWorld's own `PatchOperation` on its real file,
+with a test that the assertions can fail; `Check-DefRefs` and `Check-XmlFields` pass. The first run found no
+defect: the 1.1 weight sum is by design and the test expects the shares accordingly. 7.d Pickle suite written and
+not run: `Tests/Pickle` (5 features, `Poultry:` steps; the step assembly compiles, no step has met a game).
+7.e not applicable, with reasons, in `TEST_SCENARIOS.md` (settings, untouched vanilla behaviour, integrations without
+a patch, corpses). No local script: the mod uses the shared `Run-UnitTests.ps1`, nothing to declare in
+`scripts/LOCAL_SCRIPTS.md`. 7.g translations complete, French reviewed 2026-10-27. Run journal:
+`docs/runs/history.md`. Stage `playTests[1.0.0]`.

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Poultry Variety Pack Renew - Pickle tests</name>
+  <author>Nelim</author>
+  <packageId>nelim.poultryvarietypackrenew.pickletests</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>In-game functional tests for Poultry Variety Pack Renew, run by Pickle. Development only: never published.
+
+Written, never run. See TEST_SCENARIOS.md in the repository root for the scenarios and Tests/Pickle/README.md for what is and is not covered.</description>
+  <modDependencies>
+    <li>
+      <packageId>nelim.poultryvarietypackrenew</packageId>
+      <displayName>Poultry Variety Pack Renew</displayName>
+    </li>
+    <li>
+      <packageId>rimworks.pickle</packageId>
+      <displayName>Pickle</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3791648678</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>nelim.poultryvarietypackrenew</li>
+    <li>rimworks.pickle</li>
+  </loadAfter>
+</ModMetaData>

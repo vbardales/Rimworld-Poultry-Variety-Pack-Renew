@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>PoultryVarietyPack.Tests</AssemblyName>
+    <RimWorldManaged Condition="'$(RimWorldManaged)' == ''">C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed</RimWorldManaged>
+    <!-- Run-UnitTests.ps1 -PreBuild passes the freshly built DLL here, so the shipped one stays untouched. -->
+    <ModAssembly Condition="'$(ModAssembly)' == ''">$(MSBuildThisFileDirectory)..\Mod\Assemblies\PoultryVarietyPack.dll</ModAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The Pickle step assembly has its own project: it must not be compiled into these tests. -->
+    <Compile Remove="Pickle\**" />
+    <AssemblyMetadata Include="RimWorldManaged" Value="$(RimWorldManaged)" />
+    <AssemblyMetadata Include="ModRoot" Value="$(MSBuildThisFileDirectory)..\Mod" />
+    <AssemblyMetadata Include="ModAssembly" Value="$(ModAssembly)" />
+    <AssemblyMetadata Include="AdsCategories" Value="C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\3238353862\1.6\Defs\AnimalCategories\Animal_Categories.xml" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+    <!-- Switches off RimWorld's deep profiler so PatchOperation.Apply runs without a live game. -->
+    <PackageReference Include="Lib.Harmony" Version="2.3.3" />
+    <Reference Include="Assembly-CSharp"><HintPath>$(RimWorldManaged)\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(RimWorldManaged)\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="PoultryVarietyPack"><HintPath>$(ModAssembly)</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

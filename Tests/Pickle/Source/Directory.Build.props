@@ -1,0 +1,10 @@
+<Project>
+
+  <PropertyGroup>
+    <!-- Intermediates stay out of the test mod folder: a stray obj/ under it would be copied into the
+         WSL game by the staging script, which mirrors the folder as it is. -->
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)..\..\..\.build\pickle\obj\</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)..\..\..\.build\pickle\bin\</BaseOutputPath>
+  </PropertyGroup>
+
+</Project>

@@ -24,7 +24,7 @@ remaining:
   - unverified: in-game scenarios, logs, EN/FR display and save compatibility
 session:      local_fefdc0a0-c53d-45f3-b38c-7deeab47cdd4
 updated:      2026-10-27, workflow re-audit
-protocols_read_sha: 43dd90d4b7873c500347fba1be01275a48d5795b
+protocols_read_sha: 525411afd24dceac5b6d5a0f26272dc8899da71b
 ---
 
 # Poultry Variety Pack Renew — status
@@ -323,3 +323,7 @@ Pickle ticket `20261028-010953-494-9845` (English initial pass, all scenarios, t
 captures (8.c to 8.h). The Pickle steps (`Tests/Pickle/Source/PoultrySteps.cs`) have never met a game: a red run
 can be a step fault. TicketDispatcher is not reachable by name; TM was asked to wake the session. 7.d still owes
 a declaration of the local steps to NPT (not in the session list on 2026-10-28).
+
+### Pickle initial pass result - 2026-11-02
+
+Ticket `20261028-010953-494-9845` (English, all scenarios): 13 of 19 passed, 6 red. All six are `01-loads` "each bird is this mod's race and kind": Pickle's `is defined by mod` step stops on a name shared by a ThingDef and a PawnKindDef (step fault, not a mod defect). Fixed with the local step `Poultry: the thing {string} comes from the mod {string}`; `Check-Steps.ps1` clean. Layout moved to the closed root list (`TESTING.md`, `Docs/`, `Build/`). Replay of the red scenario filed as a small ticket (see the queue). Still to do: French pass, `@review` captures, code review (`code_review_sha` absent).

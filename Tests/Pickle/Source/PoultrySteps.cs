@@ -55,6 +55,21 @@ namespace PoultryVarietyPack.PickleSteps
             return cell;
         }
 
+        // ------------------------------------------------------------------ provenance
+
+        /// <summary>
+        /// Pickle's own "is defined by mod" step stops on a name shared by a race and its kind, so this one
+        /// reads the ThingDef alone.
+        /// </summary>
+        [Then("Poultry: the thing {string} comes from the mod {string}")]
+        public void ThingFromMod(PickleContext ctx, string defName, string packageId)
+        {
+            ThingDef def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
+            ctx.Assert(def != null, $"no ThingDef \"{defName}\": the def did not load");
+            string actual = def.modContentPack?.PackageIdPlayerFacing;
+            ctx.Assert(string.Equals(actual, packageId, StringComparison.OrdinalIgnoreCase), $"{defName} comes from '{actual}', expected {packageId}");
+        }
+
         // ------------------------------------------------------------------ birds
 
         /// <summary>

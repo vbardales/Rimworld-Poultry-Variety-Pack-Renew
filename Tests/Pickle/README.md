@@ -1,6 +1,6 @@
 # In-game scenarios, run by Pickle
 
-The scenarios of [TEST_SCENARIOS.md](../../TEST_SCENARIOS.md) that a running game is needed for, and only those.
+The scenarios of [TESTING.md](../../TESTING.md) that a running game is needed for, and only those.
 `Mod/` is a companion mod, **Poultry Variety Pack Renew - Pickle tests**, never published. It holds the feature files
 and a small step assembly (`Source/`, built into `Mod/Pickle/Assemblies/`), so nothing test-related ships in the
 Workshop folder.

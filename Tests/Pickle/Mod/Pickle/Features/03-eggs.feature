@@ -1,4 +1,4 @@
-# TEST_SCENARIOS.md P05. Every fertilized egg hatches into the bird it names, as a newborn. The Bielefelder egg
+# TESTING.md P05. Every fertilized egg hatches into the bird it names, as a newborn. The Bielefelder egg
 # of the original looked for a hatcher called Bielefelder where the bird is BielefelderChicken, so it never
 # hatched: the step goes through the game's own CompHatcher, so that fault would fail here by name.
 Feature: the fertilized eggs hatch into their birds

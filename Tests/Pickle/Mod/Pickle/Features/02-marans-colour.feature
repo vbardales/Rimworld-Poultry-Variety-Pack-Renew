@@ -1,4 +1,4 @@
-# TEST_SCENARIOS.md P03 and P04. The single thing the mod's assembly exists for: a Marans is drawn in one of
+# TESTING.md P03 and P04. The single thing the mod's assembly exists for: a Marans is drawn in one of
 # four colours, and keeps it from chick to adult, because the colour index is drawn once on the first life
 # stage and reused. The step reads the texture the render tree really resolves, not the def.
 #

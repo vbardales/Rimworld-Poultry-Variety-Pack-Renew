@@ -2,7 +2,7 @@
   <PropertyGroup>
     <!-- Intermediates leave the repository: Mod/ is handed to Steam as it stands. NuGet reads this
          before the csproj, which is why it lives here. -->
-    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)..\.build\tests\obj\</BaseIntermediateOutputPath>
-    <BaseOutputPath>$(MSBuildThisFileDirectory)..\.build\tests\bin\</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)..\Build\tests\obj\</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)..\Build\tests\bin\</BaseOutputPath>
   </PropertyGroup>
 </Project>

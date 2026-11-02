@@ -1,4 +1,4 @@
-# TEST_SCENARIOS.md P06. Asserted against the value written here FOR THE LANGUAGE THE PASS RUNS IN: the same
+# TESTING.md P06. Asserted against the value written here FOR THE LANGUAGE THE PASS RUNS IN: the same
 # scenario is green in the English pass (English values) and in the French pass (French values), and it fails,
 # naming the language, in a pass whose language it has no value for. In developer mode, which every Pickle run
 # is, a missing key in the active language shows as accented gibberish rather than clean English, so an absent

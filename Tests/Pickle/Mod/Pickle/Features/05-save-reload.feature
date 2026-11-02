@@ -1,4 +1,4 @@
-# TEST_SCENARIOS.md P07. A Marans chick is generated, its colour noted, the game is saved and reloaded: the
+# TESTING.md P07. A Marans chick is generated, its colour noted, the game is saved and reloaded: the
 # bird must come back as the save left it, same life stage and the same colour, then grow and keep it. The
 # colour is drawn from the bird's thing id, which the save keeps, so a reload that changed the id would
 # repaint the flock.

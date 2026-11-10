@@ -19,8 +19,7 @@ workshop: 3811382762
 published: no
 workshop_required_items: n/a, not released yet
 remaining:
-  - defect: 6.f FRENCH_REVIEW.md still carries the old name, regenerate as TRANSLATION_REVIEW.md
-  - defect: French Pickle pass 20261110-154038-885-274c red 2 of 2, step fault: ActiveLanguage() compares folderName to "French", the game gives "French (Français)" (Tests/Pickle/Source/PoultrySteps.cs)
+  - unverified: French pass ticket 20261110-160135-543-fa84 (04-language, tree cde3d7a, evidence Tests/Pickle/Inbox/french-language-2) after the ActiveLanguage() step fix
   - unverified: French rendering in game (04-language, after the step fix), plurals of the six breeds
   - unverified: 8.d @review captures, 8.m code_review_sha absent, 7.d local steps to declare to NPT
 session:      local_fefdc0a0-c53d-45f3-b38c-7deeab47cdd4

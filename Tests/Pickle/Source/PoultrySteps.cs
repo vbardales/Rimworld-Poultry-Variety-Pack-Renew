@@ -199,7 +199,13 @@ namespace PoultryVarietyPack.PickleSteps
 
         // ------------------------------------------------------------------ language
 
-        private static string ActiveLanguage() => LanguageDatabase.activeLanguage.folderName;
+        // folderName is "French (Français)" in the game, "English" for English: reduce it to the English name.
+        private static string ActiveLanguage()
+        {
+            string folder = LanguageDatabase.activeLanguage.folderName;
+            int paren = folder.IndexOf(" (", System.StringComparison.Ordinal);
+            return paren > 0 ? folder.Substring(0, paren) : folder;
+        }
 
         /// <summary>
         /// The label of a ThingDef in the language of the pass, from the value written for it. Fails,

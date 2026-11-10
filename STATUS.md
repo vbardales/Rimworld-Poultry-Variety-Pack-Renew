@@ -8,7 +8,7 @@ repo:         Rimworld-Poultry-Variety-Pack-Renew
 remote:       https://github.com/vbardales/Rimworld-Poultry-Variety-Pack-Renew.git
 visibility:   public
 detached:     yes
-workflow_stage: declareDependencies[1.0.0]
+workflow_stage: playTests[1.0.0]
 licence:      silent
 licence_at:   "2026-09-13: no licence anywhere, and the source stopped at 1.3 in February 2022"
 upstream_mod_remotes: N/A
@@ -21,10 +21,11 @@ workshop_required_items: n/a, not released yet
 remaining:
   - unverified: French pass ticket 20261110-160135-543-fa84 (04-language, tree cde3d7a, evidence Tests/Pickle/Inbox/french-language-2) after the ActiveLanguage() step fix
   - unverified: French rendering in game (04-language, after the step fix), plurals of the six breeds
-  - unverified: 8.d @review captures, 8.m code_review_sha absent, 7.d local steps to declare to NPT
-session:      local_fefdc0a0-c53d-45f3-b38c-7deeab47cdd4
-updated:      2026-11-10, workflow replay, back to declareDependencies
-protocols_read_sha: d27bf06201e3094e6edc54df878169fcb5fd5a1d
+  - unverified: 8.c to 8.k wait on the French ticket (8.d, 8.f, 8.h n/a: no @review, no @requires, no settings)
+  - open: 8.m code_review_sha absent (review once, after the French pass)
+session:      local_ab7b9503-b387-443f-9411-c9146d515d24
+updated:      2026-11-10, replay: declareDependencies met (4.g n/a not released yet), stage playTests, first open 8.c
+protocols_read_sha: 68188706085ecddffeee31aaf5a1388de443d90b
 ---
 
 # Poultry Variety Pack Renew — status

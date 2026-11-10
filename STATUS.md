@@ -24,7 +24,7 @@ remaining:
   - unverified: 8.d @review captures, 8.m code_review_sha absent, 7.d local steps to declare to NPT
 session:      local_fefdc0a0-c53d-45f3-b38c-7deeab47cdd4
 updated:      2026-11-10, workflow replay, back to declareDependencies
-protocols_read_sha: 47692242d1f66af4249b40a64cb55a37cc9b9c6d
+protocols_read_sha: d27bf06201e3094e6edc54df878169fcb5fd5a1d
 ---
 
 # Poultry Variety Pack Renew — status

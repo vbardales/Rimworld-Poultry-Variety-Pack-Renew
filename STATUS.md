@@ -8,7 +8,7 @@ repo:         Rimworld-Poultry-Variety-Pack-Renew
 remote:       https://github.com/vbardales/Rimworld-Poultry-Variety-Pack-Renew.git
 visibility:   public
 detached:     yes
-workflow_stage: playTests[1.0.0]
+workflow_stage: declareDependencies[1.0.0]
 licence:      silent
 licence_at:   "2026-09-13: no licence anywhere, and the source stopped at 1.3 in February 2022"
 upstream_mod_remotes: N/A
@@ -18,13 +18,15 @@ tested_on: 2026-11-03 pickle cde6a7b
 workshop: 3811382762
 published: no
 remaining:
-  - unverified: French and English rendering in game (raw keys, truncation), plurals of the six breeds (labelPlural injected)
-  - unverified: never seen running
-  - unverified: Pickle suite Tests/Pickle written 2026-10-28, never run (P01 to P07 of TEST_SCENARIOS.md), steps never met a game
-  - unverified: in-game scenarios, logs, EN/FR display and save compatibility
+  - defect: 4.b/4.e Mod/About/OptionalCompat.xml missing, ADS 2 (SamBucher.ADogSaidAnimalProsthetics2, 3238353862) is patched and undeclared
+  - defect: 4.g workshop_required_items missing (never published: n/a, not released yet)
+  - defect: 6.f FRENCH_REVIEW.md still carries the old name, regenerate as TRANSLATION_REVIEW.md
+  - defect: French Pickle pass 20261110-154038-885-274c red 2 of 2, step fault: ActiveLanguage() compares folderName to "French", the game gives "French (Français)" (Tests/Pickle/Source/PoultrySteps.cs)
+  - unverified: French rendering in game (04-language, after the step fix), plurals of the six breeds
+  - unverified: 8.d @review captures, 8.m code_review_sha absent, 7.d local steps to declare to NPT
 session:      local_fefdc0a0-c53d-45f3-b38c-7deeab47cdd4
-updated:      2026-10-27, workflow re-audit
-protocols_read_sha: 95ed151885c682a6955cde45c3b6d5d788cc08dd
+updated:      2026-11-10, workflow replay, back to declareDependencies
+protocols_read_sha: 47692242d1f66af4249b40a64cb55a37cc9b9c6d
 ---
 
 # Poultry Variety Pack Renew — status

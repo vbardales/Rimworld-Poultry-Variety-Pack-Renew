@@ -14,7 +14,7 @@ licence_at:   "2026-09-13: no licence anywhere, and the source stopped at 1.3 in
 upstream_mod_remotes: N/A
 dependencies: verified
 settings_audit: not_applicable
-tested_on: never
+tested_on: 2026-11-03 pickle cde6a7b
 workshop: 3811382762
 published: no
 remaining:
@@ -328,6 +328,6 @@ a declaration of the local steps to NPT (not in the session list on 2026-10-28).
 
 Ticket `20261028-010953-494-9845` (English, all scenarios): 13 of 19 passed, 6 red. All six are `01-loads` "each bird is this mod's race and kind": Pickle's `is defined by mod` step stops on a name shared by a ThingDef and a PawnKindDef (step fault, not a mod defect). Fixed with the local step `Poultry: the thing {string} comes from the mod {string}`; `Check-Steps.ps1` clean. Layout moved to the closed root list (`TESTING.md`, `Docs/`, `Build/`). Replay of the red scenario filed as a small ticket (see the queue). Still to do: French pass, `@review` captures, code review (`code_review_sha` absent).
 
-Queue: ticket `20261102-203017-268-c4fb` (English, `01-loads::each bird`, tree at `cde6a7b`, owner `local_ab7b9503-b387-443f-9411-c9146d515d24`, evidence `Tests/Pickle/Inbox/step-fix-loads`). On `RUN_DONE`: read `summary.json`, then `junit.xml`; if green, minify the 13 greens of `Inbox/initial-english` into `Evidence/`, then the French pass and `@review` captures (8.c to 8.h). Open: 8.d to 8.m, `code_review_sha` absent, local steps to declare to NPT (7.d), STATUS.md over 20 KB.
+Ticket `20261102-203017-268-c4fb` done 2026-11-03: 6 of 6 green, `01-loads` closed. Proofs minified in `Tests/Pickle/Evidence/{initial-english,step-fix-loads}` (Inbox empty). Open: French pass, `@review` captures (8.c to 8.h), 8.d to 8.m, `code_review_sha` absent, local steps to declare to NPT (7.d), STATUS.md over 20 KB.
 
 Preview regenerated 2026-11-10 (resume 7b) from the rewritten `Art/Preview.config.json` (title/description schema, titleSize auto 51); echo, title, panel checked by eye, no clipping.

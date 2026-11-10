@@ -22,6 +22,7 @@ remaining:
   - unverified: French pass ticket 20261110-160135-543-fa84 (04-language, tree cde3d7a, evidence Tests/Pickle/Inbox/french-language-2) after the ActiveLanguage() step fix
   - unverified: French rendering in game (04-language, after the step fix), plurals of the six breeds
   - unverified: 8.c to 8.k wait on the French ticket (8.d, 8.f, 8.h n/a: no @review, no @requires, no settings)
+  - open: after the French ticket, replace local step `Poultry: the thing {string} comes from the mod {string}` by NPT's shared `Nelim's Pickle Tools: the def {string} of type {string} comes from the mod {string}` (type ThingDef) in 01-loads, drop the local copy, rerun Check-Steps and 01-loads alone (NPT answer, 2026-11-10; the other language steps stay local)
   - open: 8.m code_review_sha absent (review once, after the French pass)
 session:      local_ab7b9503-b387-443f-9411-c9146d515d24
 updated:      2026-11-10, replay: declareDependencies met (4.g n/a not released yet), stage playTests, first open 8.c

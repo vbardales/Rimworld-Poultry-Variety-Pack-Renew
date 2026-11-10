@@ -17,9 +17,8 @@ settings_audit: not_applicable
 tested_on: 2026-11-03 pickle cde6a7b
 workshop: 3811382762
 published: no
+workshop_required_items: n/a, not released yet
 remaining:
-  - defect: 4.b/4.e Mod/About/OptionalCompat.xml missing, ADS 2 (SamBucher.ADogSaidAnimalProsthetics2, 3238353862) is patched and undeclared
-  - defect: 4.g workshop_required_items missing (never published: n/a, not released yet)
   - defect: 6.f FRENCH_REVIEW.md still carries the old name, regenerate as TRANSLATION_REVIEW.md
   - defect: French Pickle pass 20261110-154038-885-274c red 2 of 2, step fault: ActiveLanguage() compares folderName to "French", the game gives "French (Français)" (Tests/Pickle/Source/PoultrySteps.cs)
   - unverified: French rendering in game (04-language, after the step fix), plurals of the six breeds
